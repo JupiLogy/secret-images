@@ -3,7 +3,7 @@ from utils import write_to_file, read_from_file
 
 if __name__ == "__main__":
     while True:
-        print("James, Rhiannon and Jeff's secret image messaging service")
+        print("\nJames, Rhiannon and Jeff's secret image messaging service")
         print("----------------------------*----------------------------")
         print("               How can we help you today?                ")
         print("               --------------------------                ")

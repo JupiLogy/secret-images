@@ -17,7 +17,7 @@ def write_to_file():
     encrypted_image.save(out_path)
 
 def read_from_file():
-    key = input("Password for encryption: ")
+    key = input("Password for decryption: ")
     in_path = input("Filepath of encrypted image: ")
 
     cipher_text = lsb.reveal(in_path)
@@ -27,4 +27,6 @@ def read_from_file():
     opt = input("\nWould you like to save this message? (y = yes)\n")
     if opt == "y":
         filename = input("Please provide a filename: ")
-        plain_text.save(filename)
+        writetxt = open(filename, "w")
+        writetxt.write(plain_text)
+        writetxt.close()
